@@ -1,0 +1,44 @@
+body{
+    margin: 0 auto;
+}
+.container{
+    max-width: 1500px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    flex-direction: column;
+}
+
+.box-welcome{
+    display: flex;
+    flex-direction: column;
+}
+
+.title-welcome{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.title-subscribe{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.connexion{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.subscribe{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
