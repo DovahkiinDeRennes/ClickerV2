@@ -18,9 +18,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         if (storedPassword === password) {
             messageParagraphe.textContent = "Connexion réussie !";
-            // Rediriger vers la page principale ou effectuer d'autres actions
-            // Exemple de redirection (à adapter) :
-            // window.location.href = "pagePrincipale.html";
+            window.location.href = "templates/clicker.html";
         } else {
             messageParagraphe.textContent = "Pseudo ou mot de passe incorrect.";
         }
