@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="../public/app.css" type="text/css" rel="stylesheet" />
+    <link href="../public/style.css" type="text/css" rel="stylesheet" />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
       rel="stylesheet"
@@ -11,43 +11,179 @@
     <title>Clicker V2</title>
   </head>
   <body>
-    <div>
-      <div>
-        <p>10 bûches</p>
-        <p id="affichage_Argent">Argent : 0 €</p>
-        <button id="sold_Buche">Vendre des bûches</button>
+    <section class="container">
+
+  
+    <div class="box-flex-game">
+      <div class="box-branche-one">
+
+        <div class="box-branche-one-div">
+          <h3 class="italic">10 bûches</h3>
+          <h1 id="affichage_Argent">Argent : 0 €</h1>
+        </div>
+  
+        <div class="box-branche-one-div">
+          <p id="affichage_Buche">Nombre de bûche : 0</p>
+          <button class="margB10" id="get_Buche">Couper des arbres</button>
+          <button id="sold_Buche">Vendre des bûches</button>
+        </div>
+  
+        <div class="box-branche-one-div">
+          <h3 class="italic">20 €</h3>
+          <p id="affichage_Pierre">Nombre de pierre : 0</p>
+          <button id="get_Pierre">Acheter pierre</button>
+        </div>
+  
+        <div class="box-branche-one-div">
+          <h3 class="italic">20 €</h3>
+          <p id="affichage_Laine">Nombre de laine : 0</p>
+          <button id="get_Laine">Acheter laine</button>
+        </div>
+  
+        <div class="box-branche-one-div">
+          <h3 class="italic">20 pierres</h3>
+          <h3 class="italic">20 laines</h3> 
+          <h3 class="italic"> 20 bûches</h3> 
+          <h3 class="italic">100 €</h3> 
+          <p id="affichage_Maison">Nombre de maison : 0</p>
+          <button id="get_Maison">Construire maison</button>
+        </div>
+  
+    
+      </div>
+      
+      <div class="box-branche-two" id="box-branche-two">
+
+      
+        <div class="box-branche-two-div">
+          <div class="box-branche-two-div-text">
+            <p id="affichage_Armature">Nombre d'Armature : 0</p>
+          <div class="box-branche-two-div-button">
+            <h3 class="italic">20€</h3>
+          <button id="get_Armature">Acheter Armature métalique</button>
+        </div>
+        </div>
+          </div>
+          <div class="box-branche-two-div">
+            <div class="box-branche-two-div-text">
+              <p id="affichage_Gravier">Nombre de gravier : 0</p>
+            <div class="box-branche-two-div-button">
+              <h3 class="italic">20€</h3>
+            <button id="get_Armature">Acheter Gravier</button>
+          </div>
+          </div>
+            </div>
+  
+        <div class="box-branche-two-div">
+          <div>
+          <p id="affichage_Eau">Nombre d'eau : 0</p>
+          <div class="box-branche-two-div-button">
+            <h3 class="italic">20€</h3>
+          <button id="get_Eau">Acheter eau</button>
+          </div>
+        </div>
+        </div>
+  
+
+
+
+        <div class="box-branche-two-div">
+          <div>
+            <p id="affichage_Sable">Nombre de sable : 0</p>
+            <div class="box-branche-two-div-button">
+              <h3 class="italic">20€</h3>
+          <button id="get_Sable">Acheter sable</button>
+        </div>
+      </div>
       </div>
 
-      <div>
-        <p>Coupe l'arbre</p>
-        <p id="affichage_Buche">Nombre de bûche : 0</p>
-        <button id="get_Buche">Couper des arbres</button>
+  
+        <div class="box-branche-two-div" >
+        <div>
+          <p id="affichage_Ciment">Nombre de ciment : 0</p>
+          <div class="box-branche-two-div-button">
+            <h3 class="italic">20€</h3>
+          <button id="get_Ciment">Acheter ciment</button>
+        </div>
+      </div>
+    </div>
+
+        <div class="panelAffichagePrice-box"
+
+
+
+          <div class="panelAffichagePrice">
+            <div>
+              <h3 class="italic">20 armatures</h3>
+              <h3 class="italic">20 eaux</h3>
+              <h3 class="italic">20 sables</h3>
+              <h3 class="italic">20 ciments</h3> 
+              <h3 class="italic">20 gravier</h3> 
+              <h3 class="italic"> 20 bétons</h3> 
+            </div>
+            <div class="borderG">
+              <h3 class="italic">20 bois</h3>
+              <h3 class="italic">20 laines</h3>
+              <h3 class="italic">20 pierres</h3>
+              <h3 class="italic">100 argents</h3> 
+            </div>
+          </div>
+         
+         
+          <p id="affichage_Batiment">Nombre de batiment : 0</p>
+          <button id="get_Batiment">Construire batiment</button>
+        </div>
+  
+    
       </div>
 
-      <div>
-        <p>20 argents</p>
-        <p id="affichage_Pierre">Nombre de pierre : 0</p>
-        <button id="get_Pierre">Acheter pierre</button>
-      </div>
 
-      <div>
-        <p>20 argents</p>
-        <p id="affichage_Laine">Nombre de laine : 0</p>
-        <button id="get_Laine">Acheter laine</button>
-      </div>
+      <!-- <div class="box-branche-three">
 
-      <div>
-        <p>20 pierres, 20 laines, 20 bûches et 100 argents</p>
-        <p id="affichage_Maison">Nombre de maison : 0</p>
-        <button id="get_Maison">Construire maison</button>
-      </div>
+        <div class="box-branche-three-div">
+          <h3 class="italic">10 bûches</h3>
+          <h1 id="affichage_Argent">Argent : 0 €</h1>
+        </div>
+  
+        <div class="box-branche-three-div">
+          <p id="affichage_Buche">Nombre de bûche : 0</p>
+          <button class="margB10" id="get_Buche">Couper des arbres</button>
+          <button id="sold_Buche">Vendre des bûches</button>
+        </div>
+  
+        <div class="box-branche-three-div">
+          <h3 class="italic">20 argents</h3>
+          <p id="affichage_Pierre">Nombre de pierre : 0</p>
+          <button id="get_Pierre">Acheter pierre</button>
+        </div>
+  
+        <div class="box-branche-three-div">
+          <h3 class="italic">20 argents</h3>
+          <p id="affichage_Laine">Nombre de laine : 0</p>
+          <button id="get_Laine">Acheter laine</button>
+        </div>
+  
+        <div class="box-branche-three-div">
+          <h3 class="italic">20 pierres</h3>
+          <h3 class="italic">20 laines</h3> 
+          <h3 class="italic"> 20 bûches</h3> 
+          <h3 class="italic">100 argents</h3> 
+          <p id="affichage_Maison">Nombre de maison : 0</p>
+          <button id="get_Maison">Construire maison</button>
+        </div>
+  
+    
+      </div> -->
 
-      <p id=""></p>
+     
+        
+    </div>
 
+    <div class="box-reset-exit">
       <button id="reset">Réinitialiser</button>
       <button id="deconnexionButton">Déconnexion</button>
     </div>
-
+  </section>
     <script src="../public/verifConnection.js"></script>
     <script src="../public/clicker.js"></script>
     <script src="../public/deconnect.js"></script>

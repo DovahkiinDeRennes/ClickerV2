@@ -1,30 +1,4 @@
 
-    // reset.addEventListener('click', function(){
-     
-    //         nombreDeCoin = 0;
-    //         unParUn = 1;
-    //         buff1Applied = false;
-    //         buff2Applied = false;
-    //         buff3Applied = false;
-    //         buff4Applied = false;
-    //         buffSecretApplied = false;
-    
-    //         // Réinitialiser les buffs dans le localStorage
-    //         localStorage.removeItem('nombreDeCoin');
-    //         localStorage.removeItem('buff1Applied');
-    //         localStorage.removeItem('buff2Applied');
-    //         localStorage.removeItem('buff3Applied');
-    //         localStorage.removeItem('buff4Applied');
-    //         localStorage.removeItem('buffSecretApplied');
-    
-    //         let interval_id = window.setInterval(function(){}, Number.MAX_SAFE_INTEGER);
-    //         for (let i = 1; i < interval_id; i++) {
-    //             window.clearInterval(i);
-    //         };
-    //         AffichageDesCoins();
-    // })
-
-
 let intervalMaison = null;
 let plusUn = 100;
 
@@ -51,10 +25,21 @@ let aff_maison = document.getElementById('affichage_Maison');
 
 let reset = document.getElementById('reset')
 
+let box_branche_two = document.getElementById("box-branche-two")
 
 
 
+function Box_branche_two(){
+   
+    if (local_maison >= 3){
+        box_branche_two.style.visibility = 'visible';
+    }else{
+        box_branche_two.style.visibility = 'hidden';
+        console.log("Pas assez pour débloquer la suite")
+    }
 
+
+}
 
 
 function Reset(){
@@ -79,10 +64,10 @@ function Reset(){
 
     Stop_Maison_Business();
     
-   
+    Box_branche_two()
 }
 
-function Ventes_Bûches() {
+function Ventes_Buches() {
     if (local_buche >= 10) {
         local_buche -= 10;
         local_argent += 1000;
@@ -178,6 +163,7 @@ function Achat_Maison() {
                     Affichage_Buche();
                     Affichage_Pierre();
                     Affichage_Maison();
+                    Box_branche_two()
 
                 }else{
                     alert("Pas assez de pierre!");
@@ -235,11 +221,12 @@ function Incrementer_Buche() {
 reset.addEventListener("click", Reset);
 
 buche.addEventListener("click", Incrementer_Buche);
-sold_buche.addEventListener("click", Ventes_Bûches);
+sold_buche.addEventListener("click", Ventes_Buches);
 laine.addEventListener("click", Achat_Laine);
 pierre.addEventListener("click", Achat_Pierre);
 maison.addEventListener("click", Achat_Maison);
 
+Box_branche_two()
 
 Affichage_Argent();
 Affichage_Buche();
