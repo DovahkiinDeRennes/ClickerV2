@@ -1,29 +1,35 @@
-<!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="../public/app.css" type="text/css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <title>Inscription</title>
 </head>
 <body>
 
     <section class="container">
 
-        <div class="subscribe" id="subscribe">
-            <h2>Inscription</h2>
-            <!-- <label>Pseudo :</label> -->
-            <input  type="texte" id ="pseudo" placeholder="pseudo :">
-            <!-- <label>Mot de passe :</label> -->
-            <input type="password" id ="password" placeholder="Mot de passe :">
-            <input type="password" id ="confirmPassword" placeholder="Confirmation mot de passe :">
-            <button id="confirmButton">S'enregistrer</button>
-            <p id="response"></p>
-            <a href="../index.html">Retour</a>
+        <div class="box-subscribe" id="subscribe">
+            <div class="subscribe">
+                <h2>Inscription</h2>
+                <!-- <label>Pseudo :</label> -->
+                <input  type="texte" id ="pseudo" placeholder="pseudo :">
+                <!-- <label>Mot de passe :</label> -->
+                <input type="password" id ="password" placeholder="Mot de passe :">
+                <input type="password" id ="confirmPassword" placeholder="Confirmation mot de passe :">
+                <button id="confirmButton">S'enregistrer</button>
+                <p id="response"></p>
+
+            </div>
+            <div class="sub-title-subscribe">
+                <h3><a href="../index.html">Retour</a></h3>
+            </div>
         </div>
       
 
     </section>
+
     <script src="../public/subscribe.js"></script>
 </body>
 </html>

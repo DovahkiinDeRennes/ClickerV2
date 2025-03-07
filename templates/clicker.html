@@ -1,32 +1,55 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../public/app.css" type="text/css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
     <title>Clicker V2</title>
-</head>
-<body>
-    
+  </head>
+  <body>
+    <div>
+      <div>
+        <p>10 bûches</p>
+        <p id="affichage_Argent">Argent : 0 €</p>
+        <button id="sold_Buche">Vendre des bûches</button>
+      </div>
 
+      <div>
+        <p>Coupe l'arbre</p>
+        <p id="affichage_Buche">Nombre de bûche : 0</p>
+        <button id="get_Buche">Couper des arbres</button>
+      </div>
 
-    <div id="visible1">
-        <p id="affichageCoin">Nombre de coins: 0</p>
-        <button id="ajoutCoin">Ajouter un coin</button>
-        <button id="buff1">Buff +10 (10 coins)</button>
-        <button id="buff2">Buff +1/2s (100 coins)</button>
-        <button id="buff3">Buff +1000 (1000 coins)</button>
-        <button id="buff4">Buff +100/5s (10000 coins)</button>
-        <button id="buffSecret1">Buff secret (+1000000000) (1 coin)</button>
-        <button id="reset">Réinitialiser</button>
-        <button id="deconnexionButton">Déconnexion</button>
+      <div>
+        <p>20 argents</p>
+        <p id="affichage_Pierre">Nombre de pierre : 0</p>
+        <button id="get_Pierre">Acheter pierre</button>
+      </div>
+
+      <div>
+        <p>20 argents</p>
+        <p id="affichage_Laine">Nombre de laine : 0</p>
+        <button id="get_Laine">Acheter laine</button>
+      </div>
+
+      <div>
+        <p>20 pierres, 20 laines, 20 bûches et 100 argents</p>
+        <p id="affichage_Maison">Nombre de maison : 0</p>
+        <button id="get_Maison">Construire maison</button>
+      </div>
+
+      <p id=""></p>
+
+      <button id="reset">Réinitialiser</button>
+      <button id="deconnexionButton">Déconnexion</button>
     </div>
-
-
-
-
 
     <script src="../public/verifConnection.js"></script>
     <script src="../public/clicker.js"></script>
     <script src="../public/deconnect.js"></script>
-</body>
+  </body>
 </html>

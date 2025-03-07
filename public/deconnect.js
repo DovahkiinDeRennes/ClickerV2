@@ -3,14 +3,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
     if (deconnexionButton) {
         deconnexionButton.addEventListener('click', function() {
-            const pseudo = localStorage.getItem('pseudoConnecte'); 
+            // Supprimer le pseudo connecté
+            localStorage.removeItem('pseudoConnecte');
 
-            if (pseudo) {
-                localStorage.removeItem(pseudo);
-                localStorage.removeItem('pseudoConnecte');
-            }
-
-          
+            // Redirection après la déconnexion
             window.location.href = "../index.html";
         });
     }
