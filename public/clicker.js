@@ -249,31 +249,31 @@ function Achat_Batiment() {
 
 
   function Affichage_Batiment() {
-    aff_batiment.textContent = 'Nombre de batiment : ' + local_batiment;
+    aff_batiment.textContent = 'quantités de batiment : ' + local_batiment;
 }
 
 function Affichage_Armature() {
-    aff_armature.textContent = 'Nombre d\'armature : ' + local_armature;
+    aff_armature.textContent = 'quantités d\'armature : ' + local_armature;
 }
 
 
 function Affichage_Gravier() {
-    aff_gravier.textContent = 'Nombre de gravier : ' + local_gravier;
+    aff_gravier.textContent = 'quantités de gravier : ' + local_gravier;
 }
 
 
 function Affichage_Eau() {
-    aff_eau.textContent = 'Nombre d\'eau : ' + local_eau;
+    aff_eau.textContent = 'quantités d\'eau : ' + local_eau;
 }
 
 
 
 function Affichage_Sable() {
-    aff_sable.textContent = 'Nombre de sable : ' + local_sable;
+    aff_sable.textContent = 'quantités de sable : ' + local_sable;
 }
 
 function Affichage_Ciment() {
-    aff_ciment.textContent = 'Nombre de ciment : ' + local_ciment;
+    aff_ciment.textContent = 'quantités de ciment : ' + local_ciment;
 }
 
 
@@ -504,22 +504,22 @@ function Affichage_Argent() {
 
 
 function Affichage_Buche() {
-    aff_buche.textContent = 'Nombre de bûches : ' + local_buche;
+    aff_buche.textContent = 'quantités de bûches : ' + local_buche;
 }
 
 
 function Affichage_Pierre() {
-    aff_pierre.textContent = 'Nombre de pierre : ' + local_pierre;
+    aff_pierre.textContent = 'quantités de pierre : ' + local_pierre;
 }
 
 
 function Affichage_Laine() {
-    aff_laine.textContent = 'Nombre de laine : ' + local_laine;
+    aff_laine.textContent = 'quantités de laine : ' + local_laine;
 }
 
 
 function Affichage_Maison() {
-    aff_maison.textContent = 'Nombre de maison : ' + local_maison;
+    aff_maison.textContent = 'quantités de maison : ' + local_maison;
 }
 
 
